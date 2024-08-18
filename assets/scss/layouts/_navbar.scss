@@ -1,7 +1,8 @@
 
     nav{
+        //background-color: black;
         .nav_body{
-                border: var(--border);
+                // border: var(--border);
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -13,7 +14,7 @@
                     }
                 }
                 .menue{
-                border: var(--border);
+                //border: var(--border);
                     ul{
                         display: flex;
                         flex-wrap: wrap;
@@ -30,14 +31,14 @@
                     }
                 }
                 .action_menues{
-                    border: var(--border);
+                    //border: var(--border);
                     ul{
                         display: flex;
                         flex-wrap: wrap;
                         height: 100%;
                         align-items: center;
                         li{
-                            
+                            padding-right: 20px;
                             a{
             
                             }
