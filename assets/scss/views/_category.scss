@@ -1,0 +1,35 @@
+#productIconsOnCategory{
+    .containertwo{
+        display: flex; 
+        padding: 20px; 
+        justify-content: space-between;
+        @include xs(){
+            display: block;
+         }
+        .product_icon{
+            .product_content{
+                img,p{
+                    
+                }
+                
+            }
+           
+        }
+       
+    }
+    
+}
+.sub_container{
+
+
+
+@include xs(){
+    display: block;
+padding-bottom: 10px;
+padding-top: 10px;
+ }
+
+    .sidebar{
+    padding: 10px;
+    }
+}

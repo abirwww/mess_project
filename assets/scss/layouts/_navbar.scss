@@ -1,0 +1,49 @@
+
+    nav{
+        .nav_body{
+                border: var(--border);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 18px 0px;
+                .logo{
+                    height: 65px;
+                    img{
+            
+                    }
+                }
+                .menue{
+                border: var(--border);
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        align-items: center;
+                        gap: 65px;
+                        li{
+                            
+                            a{
+                                font-size: 18px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                .action_menues{
+                    border: var(--border);
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        align-items: center;
+                        li{
+                            
+                            a{
+            
+                            }
+                        }
+                    }
+                }
+           } 
+    }
+
