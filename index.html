@@ -7,60 +7,839 @@
     <title>mess-bd-hostel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link   href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./assets/fonts/google_icons.css">-->
-    <link rel="stylesheet" href="assets/styles/app.css">
+            rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/app.css">  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
 
 </head>
 
 <body>
-   <header>
-    <nav>
-        <div class="container">
-            <div class="nav_body">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" style="width: 120px;" alt="">
-                </div>
-                <div class="menue">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Rooms</a></li>
-                        <li><a href="#">Dining</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="action_menues">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/images/icons/search-normal.png" alt="">
-                            </a>
-                        </li>
-                        <!-- <li>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav_body">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" style="width: 120px;" alt="">
+                    </div>
+                    <div class="menue">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Dining</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="action_menues">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/search-normal.png" alt="">
+                                </a>
+                            </li>
+                            <!-- <li>
                             <a href="#">
                                 <img src="./assets/images/icons/bag.png" alt="">
                             </a>
                         </li> -->
-                        <li>
-                            <a href="#">
-                                <img src="./assets/images/icons/user.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/user.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-   </header>
+        </nav>
+    </header>
 
-    <script src="./js/plugins/alpine.js"></script>
-    <script src="./js/app.js"></script>
+    <!-- HOME PAGE SECTION -->
+    <section>
+        <div id="wrapper">
+
+            <div class="slider-text">
+                <div class="text-part">
+                    <h2>Live, Enjoy & Stay Comfort</h2>
+                
+                    <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images. It should offer 24/7 
+                        customer support via live chat, email, and phone, along with an interactive map highlighting nearby attractions and services. </p>
+                        <a class="open-popup-btn" href="#">Book Now</a>
+                    <!-- popup -->
+    
+                    <div class="popup-overlay">
+                        <div class="popup-content">
+                          <span class="close-btn">&times;</span>
+                          <h2>Which type of room do you need?</h2>
+                          <div class="side" style="display: flex;">
+                            <div class="left-side">
+                                <div>
+                                    <label for="cars">ROOM:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="cars">DRAWING:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">Zero</option>
+    
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="cars">KITCHEN:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">Zero</option>
+    
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                              </div>
+                              
+        
+                              <div class="right-side">
+                                <div>
+                                    <label for="cars">DINING:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">Zero</option>
+    
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="cars">BATH:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">Zero</option>
+    
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="cars">BELCONY:</label>
+                                    <select id="cars" name="carlist" form="carform">
+                                      <option value="volvo">Zero</option>
+    
+                                      <option value="volvo">One</option>
+                                      <option value="saab">Two</option>
+                                      <option value="opel">Three</option>
+                                      <option value="audi">Four</option>
+                                    </select>
+                                  </div>
+                              </div>
+                          </div>
+                         
+                         
+                          <form action="/action_page.php" id="carform">
+                            <label for="fname">Amount Of Money:</label>
+                            <input type="text" id="fname" name="fname">
+                            <input type="submit">
+                          </form>
+                          
+                        </div>
+                      </div>
+    
+                    <!-- popup -->
+                   
+                </div>
+                <div class="form-part">
+                    <div class="testbox">
+                        <h3>#Find Mess</h3>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="New York">
+                        </div>
+                        <div class="col-50">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="NY">
+                          </div>
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+
+
+                          <!-- <div class="item">
+                            <p>Room 1 type</p>
+                            <select>
+                            <option value="20" selected></option>
+                            <option value="21">Standard</option>
+                            <option value="22">Deluxe</option>
+                            <option value="23">Suite</option>
+                            </select>
+                            </div>    
+                            <div class="item">
+                            <p>Room 2 type</p>
+                            <select>
+                            <option value="24"  selected></option>
+                            <option value="25">Standard</option>
+                            <option value="26">Deluxe</option>
+                            <option value="27">Suite</option>
+                            </select>
+                            </div>    
+                            </div> -->
+
+
+
+                </div>
+                </div>
+
+                
+                
+                
+
+
+
+            <div id="slider-area" class="owl-carousel owl-theme">
+                <div class="item" style="background-image: url(/assets/images/slider/dining.JPG)"></div>
+                <div class="item" style="background-image: url(/assets/images/slider/dining2.JPG)"></div>
+                <div class="item" style="background-image: url(/assets/images/slider/dining3.png)"></div>
+            </div>
+           
+        </div>
+
+        
+       
+    </section>
+
+    <!-- HOME PAGE SECTION -->
+
+
+    <!-- all actegory -->
+    <!-- <section class="card">
+        
+          <div class="card-hover">
+            <div class="card-hover__content">
+              <h3 class="card-hover__title">
+                Make your <span>choice</span> right now!
+              </h3>
+              <p class="card-hover__text">A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and </p>
+              <a href="#" class="card-hover__link">
+                <span>Learn How</span>
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>        
+              </a>
+            </div>
+            <div class="card-hover__extra">
+              <h4>Employers <span>now</span> and get <span>40%</span> discount!</h4>
+            </div>
+            <img src="./assets/images/all_categories/employer.png" alt="">
+          </div>
+          <div class="card-hover">
+            <div class="card-hover__content">
+              <h3 class="card-hover__title">
+                Make your <span>choice</span> right now!
+              </h3>
+              <p class="card-hover__text">A great hostel website should have a simple booking system, clear room descriptions with photos, and 24/7 customer support. It should also feature a photo gallery and guest reviews </p>
+              <a href="#" class="card-hover__link">
+                <span>Learn How</span>
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>        
+              </a>
+            </div>
+            <div class="card-hover__extra">
+              <h4>For Boy <span>now</span> and get <span>40%</span> discount!</h4>
+            </div>
+            <img src="./assets/images/all_categories/boys.jpg" alt="">
+          </div>
+          <div class="card-hover">
+            <div class="card-hover__content">
+              <h3 class="card-hover__title">
+                Make your <span>choice</span> right now!
+              </h3>
+              <p class="card-hover__text"> Secure payment options and multilingual support are essential for a smooth, global user experience.</p>
+              <a href="#" class="card-hover__link">
+                <span>Learn How</span>
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>        
+              </a>
+            </div>
+            <div class="card-hover__extra">
+              <h4>For girl <span>now</span> and get <span>50%</span> discount!</h4>
+            </div>
+            <img src="./assets/images/all_categories/girl.jpg" alt="">
+          </div>
+    </section>
+
+    <section class="card">
+        <div class="card-hover">
+          <div class="card-hover__content">
+            <h3 class="card-hover__title">
+              Make your <span>choice</span> right now!
+            </h3>
+            <p class="card-hover__text">Secure payment options, a blog with travel tips, and multilingual support enhance the user experience and cater to an international audience.</p>
+            <a href="#" class="card-hover__link">
+              <span>Learn How</span>
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>        
+            </a>
+          </div>
+          <div class="card-hover__extra">
+            <h4>Sublet <span>now</span> and get <span>10%</span> discount!</h4>
+          </div>
+          <img src="./assets/images/all_categories/sublet.JPG" alt="">
+        </div>
+        <div class="card-hover">
+          <div class="card-hover__content">
+            <h3 class="card-hover__title">
+              Make your <span>choice</span> right now!
+            </h3>
+            <p class="card-hover__text">It should also feature a photo gallery and guest reviews to build trust, along with an interactive map to show nearby attractions. </p>
+            <a href="#" class="card-hover__link">
+              <span>Learn How</span>
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>        
+            </a>
+          </div>
+          <div class="card-hover__extra">
+            <h4>Two Bed <span>now</span> and get <span>20%</span> discount!</h4>
+          </div>
+          <img src="./assets/images/all_categories/twobed.JPG" alt="">
+        </div>
+        <div class="card-hover">
+          <div class="card-hover__content">
+            <h3 class="card-hover__title">
+              Make your <span>choice</span> right now!
+            </h3>
+            <p class="card-hover__text">A great hostel website should have a simple booking system, clear room descriptions with photos, and 24/7 customer support.</p>
+            <a href="#" class="card-hover__link">
+              <span>Learn How</span>
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>        
+            </a>
+          </div>
+          <div class="card-hover__extra">
+            <h4>Single Bed <span>now</span> and get <span>40%</span> discount!</h4>
+          </div>
+          <img src="/assets/images/all_categories/singlebed.JPG" alt="">
+        </div>
+  </section>
+
+  <section class="card">
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+</section>
+
+<section class="card">
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+    <div class="card-hover">
+      <div class="card-hover__content">
+        <h3 class="card-hover__title">
+          Make your <span>choice</span> right now!
+        </h3>
+        <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+        <a href="#" class="card-hover__link">
+          <span>Learn How</span>
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>
+      <div class="card-hover__extra">
+        <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+      </div>
+      <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60" alt="">
+    </div>
+</section> -->
+
+    <!-- all actegory -->
+
+
+
+   <!-- All Post Section -->
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/1.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Mirpur 12</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Two Bed Room & One Dining with Kitchen</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/3.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Kook</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Gazipur, Eastern Housing</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Three Bed Room & One Dining with balcony</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/1.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Mirpur 12</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Two Bed Room & One Dining with Kitchen</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/1.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Mirpur 12</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Two Bed Room & One Dining with Kitchen</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/1.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Mirpur 12</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Two Bed Room & One Dining with Kitchen</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="post">
+            <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/1.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Mirpur 12</a></li>
+                        <li><a href="#">Block A, Road 5</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Two Bed Room & One Dining with Kitchen</h1>
+                  <h2>Opening a door to the future</h2>
+                  <p> A two-bedroom space with a dining area and kitchen offers comfortable living. The two bedrooms provide ample privacy, ideal for families or roommates. </p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(./assets/images/Post/2.jpg)"></div>
+                  <ul class="details">
+                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="date">July. 15, 2015</li>
+                    <li class="tags">
+                      <ul>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Uttara, Section 7</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>Single Room & One Dining with Kitchen</h1>
+                  <h2>Secure payment options, a blog with travel tips</h2>
+                  <p>A top-notch hostel website should feature a user-friendly booking system, allowing easy reservations and cancellations, and a detailed display of room options with images.</p>
+                  <p class="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+   
+
+
+   <!-- All Post Section -->
+
+
+    <!-- <script src="./js/app.js"></script> -->
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay:true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+    <script>
+       // Open the popup when the button is clicked
+document.querySelector('.open-popup-btn').addEventListener('click', function() {
+    document.querySelector('.popup-overlay').classList.add('active');
+  });
+  
+  // Close the popup when the close button is clicked
+  document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.popup-overlay').classList.remove('active');
+  });
+  
+  // Close the popup if the user clicks outside of the popup content
+  document.querySelector('.popup-overlay').addEventListener('click', function(event) {
+    if (event.target === document.querySelector('.popup-overlay')) {
+      document.querySelector('.popup-overlay').classList.remove('active');
+    }
+  });
+    </script>
+
 </body>
 
 </html>

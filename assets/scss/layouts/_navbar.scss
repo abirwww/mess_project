@@ -27,6 +27,9 @@
                                 font-size: 18px;
                                 color: black;
                             }
+                            a:hover{
+                                color: blue;
+                            }
                         }
                     }
                 }
@@ -39,9 +42,7 @@
                         align-items: center;
                         li{
                             padding-right: 20px;
-                            a{
-            
-                            }
+                           
                         }
                     }
                 }
